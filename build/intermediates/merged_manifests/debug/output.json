@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "applicationId": "org.lineageos.setupwizard",
+  "variantType": "BASE_APK",
+  "elements": [
+    {
+      "outputType": {
+        "type": "MERGED_MANIFESTS"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 5,
+        "outputFile": "android_packages_apps_SetupWizard-debug.apk",
+        "fullName": "debug",
+        "baseName": "debug",
+        "dirName": ""
+      },
+      "path": "AndroidManifest.xml",
+      "properties": {
+        "packageId": "org.lineageos.setupwizard",
+        "split": "",
+        "minSdkVersion": "23"
+      }
+    }
+  ]
+}

@@ -1,0 +1,663 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3     Copyright (C) 2013 The CyanogenMod Project
+4     Copyright (C) 2017,2019 The LineageOS Project
+5
+6     Licensed under the Apache License, Version 2.0 (the "License");
+7     you may not use this file except in compliance with the License.
+8     You may obtain a copy of the License at
+9
+10          http://www.apache.org/licenses/LICENSE-2.0
+11
+12     Unless required by applicable law or agreed to in writing, software
+13     distributed under the License is distributed on an "AS IS" BASIS,
+14     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+15     See the License for the specific language governing permissions and
+16     limitations under the License.
+17-->
+18<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+19    xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
+20    package="org.lineageos.setupwizard"
+21    android:sharedUserId="android.uid.system"
+22    android:versionCode="5" >
+23
+24    <uses-sdk
+25        android:minSdkVersion="23"
+25-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml
+26        android:targetSdkVersion="29" />
+26-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml
+27
+28    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+28-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:24:5-79
+28-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:24:22-76
+29    <uses-permission android:name="android.permission.STATUS_BAR" />
+29-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:25:5-69
+29-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:25:22-66
+30    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+30-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:26:5-73
+30-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:26:22-70
+31    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+31-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:27:5-80
+31-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:27:22-77
+32    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+32-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:28:5-72
+32-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:28:22-69
+33    <uses-permission android:name="android.permission.SET_TIME" />
+33-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:29:5-67
+33-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:29:22-64
+34    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+34-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:30:5-79
+34-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:30:22-76
+35    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+35-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:31:5-78
+35-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:31:22-76
+36    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+36-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:32:5-76
+36-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:32:22-73
+37    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+37-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:33:5-76
+37-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:33:22-73
+38    <uses-permission android:name="android.permission.INTERNET" />
+38-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:34:5-66
+38-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:34:22-64
+39    <uses-permission android:name="android.permission.GET_ACCOUNTS_PRIVILEGED" />
+39-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:35:5-82
+39-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:35:22-79
+40    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+40-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:36:5-86
+40-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:36:22-83
+41    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+41-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:37:5-74
+41-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:37:22-71
+42    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
+42-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:38:5-80
+42-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:38:22-77
+43    <uses-permission android:name="android.permission.MANAGE_USERS" />
+43-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:39:5-71
+43-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:39:22-68
+44    <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" />
+44-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:40:5-89
+44-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:40:22-86
+45    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+45-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:41:5-76
+45-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:41:22-73
+46    <uses-permission android:name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS" />
+46-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:42:5-88
+46-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:42:22-85
+47    <uses-permission android:name="android.permission.BACKUP" />
+47-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:43:5-65
+47-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:43:22-62
+48    <uses-permission android:name="lineageos.permission.FINISH_SETUP" />
+48-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:44:5-73
+48-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:44:22-70
+49    <uses-permission android:name="lineageos.permission.WRITE_SETTINGS" />
+49-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:45:5-75
+49-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:45:22-72
+50    <uses-permission android:name="lineageos.permission.WRITE_SECURE_SETTINGS" />
+50-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:46:5-82
+50-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:46:22-79
+51
+52    <permission
+52-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:48:5-50:55
+53        android:name="lineageos.permission.FINISH_SETUP"
+53-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:49:9-57
+54        android:protectionLevel="signatureOrSystem" />
+54-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:50:9-52
+55
+56    <protected-broadcast
+56-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:52:5-53:82
+57        android:name="org.lineageos.setupwizard.SETUP_FINISHED"
+57-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:52:26-81
+58        android:permission="lineageos.permission.FINISH_SETUP" />
+58-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:53:26-80
+59
+60    <application
+60-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:55:5-315:19
+61        android:name="org.lineageos.setupwizard.SetupWizardApp"
+61-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:60:18-48
+62        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+62-->[com.android.support:support-compat:28.0.0] /Users/gWOLF3/.gradle/caches/transforms-2/files-2.1/0b9593fbb2dcde7397582f8d667e1ce4/support-compat-28.0.0/AndroidManifest.xml:22:18-91
+63        android:debuggable="true"
+64        android:extractNativeLibs="false"
+65        android:icon="@mipmap/ic_launcher"
+65-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:56:18-52
+66        android:label="@string/app_name"
+66-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:55:18-50
+67        android:taskAffinity="com.android.wizard"
+67-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:59:18-59
+68        android:theme="@style/Theme.Setup"
+68-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:57:18-52
+69        android:uiOptions="none" >
+69-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:58:18-42
+70        <activity
+70-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:63:9-76:20
+71            android:name="org.lineageos.setupwizard.wizardmanager.WizardManager"
+71-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:65:19-62
+72            android:configChanges="keyboard|keyboardHidden|mcc|mnc|orientation|screenSize"
+72-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:69:19-97
+73            android:enabled="false"
+73-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:66:19-42
+74            android:excludeFromRecents="true"
+74-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:68:19-52
+75            android:exported="false"
+75-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:67:19-43
+76            android:immersive="true"
+76-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:70:19-43
+77            android:label="@string/activity_label_empty"
+77-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:64:19-63
+78            android:theme="@style/NoDisplay" >
+78-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:63:19-51
+79            <intent-filter>
+79-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:71:13-75:29
+80                <action android:name="com.android.wizard.LOAD" />
+80-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:72:17-66
+80-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:72:25-63
+81                <action android:name="com.android.wizard.NEXT" />
+81-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:73:17-66
+81-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:73:25-63
+82
+83                <category android:name="android.intent.category.DEFAULT" />
+83-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:17-76
+83-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:27-73
+84            </intent-filter>
+85        </activity>
+86        <activity
+86-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:78:9-94:20
+87            android:name="org.lineageos.setupwizard.SetupWizardActivity"
+87-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:78:19-54
+88            android:configChanges="keyboard|keyboardHidden|mcc|mnc|orientation|screenSize"
+88-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:83:19-97
+89            android:excludeFromRecents="true"
+89-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:82:19-52
+90            android:immersive="true"
+90-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:84:19-43
+91            android:label="@string/activity_label_empty"
+91-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:79:19-63
+92            android:launchMode="singleTask"
+92-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:81:19-50
+93            android:lockTaskMode="normal"
+93-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:80:19-48
+94            android:theme="@style/NoDisplay"
+94-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:86:19-51
+95            android:windowSoftInputMode="stateAlwaysHidden" >
+95-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:85:19-66
+96            <intent-filter android:priority="9" >
+96-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:88:13-93:29
+96-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:88:28-48
+97                <action android:name="android.intent.action.MAIN" />
+97-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:89:17-69
+97-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:89:25-66
+98                <action android:name="android.intent.action.DEVICE_INITIALIZATION_WIZARD" />
+98-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:90:17-93
+98-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:90:25-90
+99
+100                <category android:name="android.intent.category.HOME" />
+100-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:91:17-73
+100-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:91:27-70
+101                <category android:name="android.intent.category.DEFAULT" />
+101-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:17-76
+101-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:27-73
+102            </intent-filter>
+103        </activity>
+104        <activity
+104-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:96:9-106:20
+105            android:name="org.lineageos.setupwizard.BluetoothSetupActivity"
+105-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:96:19-57
+106            android:configChanges="mcc|mnc"
+106-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:99:19-50
+107            android:excludeFromRecents="true"
+107-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:98:19-52
+108            android:immersive="true"
+108-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:100:19-43
+109            android:label="@string/activity_label_empty"
+109-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:97:19-63
+110            android:windowSoftInputMode="stateAlwaysHidden" >
+110-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:101:19-66
+111            <intent-filter>
+111-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:102:13-105:29
+112                <action android:name="org.lineageos.setupwizard.LINEAGE_BLUETOOTH_SETUP" />
+112-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:103:17-92
+112-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:103:25-89
+113
+114                <category android:name="android.intent.category.DEFAULT" />
+114-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:17-76
+114-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:27-73
+115            </intent-filter>
+116        </activity>
+117        <activity
+117-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:108:9-118:20
+118            android:name="org.lineageos.setupwizard.WelcomeActivity"
+118-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:108:19-50
+119            android:configChanges="mcc|mnc"
+119-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:111:19-50
+120            android:excludeFromRecents="true"
+120-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:110:19-52
+121            android:immersive="true"
+121-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:112:19-43
+122            android:label="@string/activity_label_empty"
+122-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:109:19-63
+123            android:windowSoftInputMode="stateAlwaysHidden" >
+123-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:113:19-66
+124            <intent-filter>
+124-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:114:13-117:29
+125                <action android:name="org.lineageos.setupwizard.LINEAGE_WELCOME" />
+125-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:115:17-84
+125-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:115:25-81
+126
+127                <category android:name="android.intent.category.DEFAULT" />
+127-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:17-76
+127-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:27-73
+128            </intent-filter>
+129        </activity>
+130        <activity
+130-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:120:9-130:20
+131            android:name="org.lineageos.setupwizard.LocaleActivity"
+131-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:120:19-49
+132            android:configChanges="mcc|mnc"
+132-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:123:19-50
+133            android:excludeFromRecents="true"
+133-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:122:19-52
+134            android:immersive="true"
+134-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:124:19-43
+135            android:label="@string/activity_label_empty"
+135-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:121:19-63
+136            android:windowSoftInputMode="stateAlwaysHidden" >
+136-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:125:19-66
+137            <intent-filter>
+137-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:126:13-129:29
+138                <action android:name="org.lineageos.setupwizard.LINEAGE_LOCALE" />
+138-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:127:17-83
+138-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:127:25-80
+139
+140                <category android:name="android.intent.category.DEFAULT" />
+140-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:17-76
+140-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:27-73
+141            </intent-filter>
+142        </activity>
+143        <activity
+143-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:132:9-142:20
+144            android:name="org.lineageos.setupwizard.DateTimeActivity"
+144-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:132:19-51
+145            android:configChanges="mcc|mnc"
+145-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:135:19-50
+146            android:excludeFromRecents="true"
+146-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:134:19-52
+147            android:immersive="true"
+147-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:136:19-43
+148            android:label="@string/activity_label_empty"
+148-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:133:19-63
+149            android:windowSoftInputMode="stateAlwaysHidden" >
+149-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:137:19-66
+150            <intent-filter>
+150-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:138:13-141:29
+151                <action android:name="org.lineageos.setupwizard.LINEAGE_DATETIME" />
+151-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:139:17-85
+151-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:139:25-82
+152
+153                <category android:name="android.intent.category.DEFAULT" />
+153-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:17-76
+153-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:27-73
+154            </intent-filter>
+155        </activity>
+156        <activity
+156-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:144:9-155:20
+157            android:name="org.lineageos.setupwizard.WifiSetupActivity"
+157-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:144:19-52
+158            android:configChanges="mcc|mnc"
+158-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:147:19-50
+159            android:excludeFromRecents="true"
+159-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:146:19-52
+160            android:exported="false"
+160-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:149:19-43
+161            android:immersive="true"
+161-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:148:19-43
+162            android:label="@string/activity_label_empty"
+162-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:145:19-63
+163            android:windowSoftInputMode="stateAlwaysHidden" >
+163-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:150:19-66
+164            <intent-filter>
+164-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:151:13-154:29
+165                <action android:name="org.lineageos.setupwizard.LINEAGE_WIFI_SETUP" />
+165-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:152:17-87
+165-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:152:25-84
+166
+167                <category android:name="android.intent.category.DEFAULT" />
+167-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:17-76
+167-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:27-73
+168            </intent-filter>
+169        </activity>
+170        <activity
+170-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:157:9-168:20
+171            android:name="org.lineageos.setupwizard.CaptivePortalSetupActivity"
+171-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:157:19-61
+172            android:configChanges="mcc|mnc"
+172-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:160:19-50
+173            android:excludeFromRecents="true"
+173-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:159:19-52
+174            android:exported="false"
+174-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:162:19-43
+175            android:immersive="true"
+175-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:161:19-43
+176            android:label="@string/activity_label_empty"
+176-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:158:19-63
+177            android:windowSoftInputMode="stateAlwaysHidden" >
+177-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:163:19-66
+178            <intent-filter>
+178-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:164:13-167:29
+179                <action android:name="org.lineageos.setupwizard.LINEAGE_CAPTIVE_PORTAL_SETUP" />
+179-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:165:17-97
+179-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:165:25-94
+180
+181                <category android:name="android.intent.category.DEFAULT" />
+181-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:17-76
+181-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:27-73
+182            </intent-filter>
+183        </activity>
+184        <activity
+184-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:170:9-181:20
+185            android:name="org.lineageos.setupwizard.SimMissingActivity"
+185-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:170:19-53
+186            android:configChanges="mcc|mnc"
+186-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:173:19-50
+187            android:excludeFromRecents="true"
+187-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:172:19-52
+188            android:exported="false"
+188-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:175:19-43
+189            android:immersive="true"
+189-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:174:19-43
+190            android:label="@string/activity_label_empty"
+190-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:171:19-63
+191            android:windowSoftInputMode="stateAlwaysHidden" >
+191-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:176:19-66
+192            <intent-filter>
+192-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:177:13-180:29
+193                <action android:name="org.lineageos.setupwizard.LINEAGE_SIM_MISSING" />
+193-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:178:17-88
+193-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:178:25-85
+194
+195                <category android:name="android.intent.category.DEFAULT" />
+195-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:17-76
+195-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:27-73
+196            </intent-filter>
+197        </activity>
+198        <activity
+198-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:183:9-194:20
+199            android:name="org.lineageos.setupwizard.ChooseDataSimActivity"
+199-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:183:19-56
+200            android:configChanges="mcc|mnc"
+200-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:186:19-50
+201            android:excludeFromRecents="true"
+201-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:185:19-52
+202            android:exported="false"
+202-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:188:19-43
+203            android:immersive="true"
+203-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:187:19-43
+204            android:label="@string/activity_label_empty"
+204-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:184:19-63
+205            android:windowSoftInputMode="stateAlwaysHidden" >
+205-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:189:19-66
+206            <intent-filter>
+206-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:190:13-193:29
+207                <action android:name="org.lineageos.setupwizard.LINEAGE_CHOOSE_DATA_SIM" />
+207-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:191:17-92
+207-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:191:25-89
+208
+209                <category android:name="android.intent.category.DEFAULT" />
+209-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:17-76
+209-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:27-73
+210            </intent-filter>
+211        </activity>
+212        <activity
+212-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:196:9-207:20
+213            android:name="org.lineageos.setupwizard.MobileDataActivity"
+213-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:196:19-53
+214            android:configChanges="mcc|mnc"
+214-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:199:19-50
+215            android:excludeFromRecents="true"
+215-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:198:19-52
+216            android:exported="false"
+216-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:201:19-43
+217            android:immersive="true"
+217-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:200:19-43
+218            android:label="@string/activity_label_empty"
+218-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:197:19-63
+219            android:windowSoftInputMode="stateAlwaysHidden" >
+219-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:202:19-66
+220            <intent-filter>
+220-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:203:13-206:29
+221                <action android:name="org.lineageos.setupwizard.LINEAGE_ENABLE_MOBILE_DATA" />
+221-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:204:17-95
+221-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:204:25-92
+222
+223                <category android:name="android.intent.category.DEFAULT" />
+223-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:17-76
+223-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:27-73
+224            </intent-filter>
+225        </activity>
+226        <activity
+226-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:209:9-220:20
+227            android:name="org.lineageos.setupwizard.LocationSettingsActivity"
+227-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:209:19-59
+228            android:configChanges="mcc|mnc"
+228-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:212:19-50
+229            android:excludeFromRecents="true"
+229-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:211:19-52
+230            android:exported="false"
+230-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:214:19-43
+231            android:immersive="true"
+231-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:213:19-43
+232            android:label="@string/activity_label_empty"
+232-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:210:19-63
+233            android:windowSoftInputMode="stateAlwaysHidden" >
+233-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:215:19-66
+234            <intent-filter>
+234-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:216:13-219:29
+235                <action android:name="org.lineageos.setupwizard.LINEAGE_LOCATION_SETTINGS" />
+235-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:217:17-94
+235-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:217:25-91
+236
+237                <category android:name="android.intent.category.DEFAULT" />
+237-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:17-76
+237-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:27-73
+238            </intent-filter>
+239        </activity>
+240        <activity
+240-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:222:9-232:20
+241            android:name="org.lineageos.setupwizard.LineageSettingsActivity"
+241-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:222:19-58
+242            android:configChanges="mcc|mnc"
+242-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:225:19-50
+243            android:excludeFromRecents="true"
+243-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:224:19-52
+244            android:immersive="true"
+244-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:226:19-43
+245            android:label="@string/activity_label_empty"
+245-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:223:19-63
+246            android:windowSoftInputMode="stateAlwaysHidden" >
+246-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:227:19-66
+247            <intent-filter>
+247-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:228:13-231:29
+248                <action android:name="org.lineageos.setupwizard.LINEAGE_SETTINGS" />
+248-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:229:17-85
+248-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:229:25-82
+249
+250                <category android:name="android.intent.category.DEFAULT" />
+250-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:17-76
+250-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:27-73
+251            </intent-filter>
+252        </activity>
+253        <activity
+253-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:234:9-245:20
+254            android:name="org.lineageos.setupwizard.FingerprintActivity"
+254-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:234:19-54
+255            android:configChanges="mcc|mnc"
+255-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:237:19-50
+256            android:excludeFromRecents="true"
+256-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:236:19-52
+257            android:exported="false"
+257-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:239:19-43
+258            android:immersive="true"
+258-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:238:19-43
+259            android:label="@string/activity_label_empty"
+259-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:235:19-63
+260            android:windowSoftInputMode="stateAlwaysHidden" >
+260-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:240:19-66
+261            <intent-filter>
+261-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:241:13-244:29
+262                <action android:name="org.lineageos.setupwizard.LINEAGE_FINGERPRINT_SETTINGS" />
+262-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:242:17-97
+262-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:242:25-94
+263
+264                <category android:name="android.intent.category.DEFAULT" />
+264-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:17-76
+264-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:27-73
+265            </intent-filter>
+266        </activity>
+267        <activity
+267-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:247:9-258:20
+268            android:name="org.lineageos.setupwizard.ScreenLockActivity"
+268-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:247:19-53
+269            android:configChanges="mcc|mnc"
+269-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:250:19-50
+270            android:excludeFromRecents="true"
+270-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:249:19-52
+271            android:exported="false"
+271-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:252:19-43
+272            android:immersive="true"
+272-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:251:19-43
+273            android:label="@string/activity_label_empty"
+273-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:248:19-63
+274            android:windowSoftInputMode="stateAlwaysHidden" >
+274-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:253:19-66
+275            <intent-filter>
+275-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:254:13-257:29
+276                <action android:name="org.lineageos.setupwizard.LINEAGE_LOCKSCREEN_SETTINGS" />
+276-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:255:17-96
+276-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:255:25-93
+277
+278                <category android:name="android.intent.category.DEFAULT" />
+278-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:17-76
+278-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:27-73
+279            </intent-filter>
+280        </activity>
+281        <activity
+281-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:260:9-271:20
+282            android:name="org.lineageos.setupwizard.backup.RestoreIntroActivity"
+282-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:260:19-62
+283            android:configChanges="mcc|mnc"
+283-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:263:19-50
+284            android:excludeFromRecents="true"
+284-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:262:19-52
+285            android:exported="false"
+285-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:265:19-43
+286            android:immersive="true"
+286-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:264:19-43
+287            android:label="@string/activity_label_empty"
+287-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:261:19-63
+288            android:windowSoftInputMode="stateAlwaysHidden" >
+288-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:266:19-66
+289            <intent-filter>
+289-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:267:13-270:29
+290                <action android:name="org.lineageos.setupwizard.LINEAGE_RESTORE_BACKUP" />
+290-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:268:17-90
+290-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:268:25-88
+291
+292                <category android:name="android.intent.category.DEFAULT" />
+292-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:17-76
+292-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:27-73
+293            </intent-filter>
+294        </activity>
+295        <activity
+295-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:273:9-283:20
+296            android:name="org.lineageos.setupwizard.FinishActivity"
+296-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:273:19-49
+297            android:configChanges="mcc|mnc"
+297-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:276:19-50
+298            android:excludeFromRecents="true"
+298-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:275:19-52
+299            android:immersive="true"
+299-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:277:19-43
+300            android:label="@string/activity_label_empty"
+300-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:274:19-63
+301            android:windowSoftInputMode="stateAlwaysHidden" >
+301-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:278:19-66
+302            <intent-filter>
+302-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:279:13-282:29
+303                <action android:name="org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE" />
+303-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:280:17-91
+303-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:280:25-88
+304
+305                <category android:name="android.intent.category.DEFAULT" />
+305-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:17-76
+305-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:27-73
+306            </intent-filter>
+307        </activity>
+308        <activity
+308-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:285:9-295:20
+309            android:name="org.lineageos.setupwizard.SetupWizardExitActivity"
+309-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:285:19-58
+310            android:configChanges="keyboard|keyboardHidden|mcc|mnc|orientation|screenSize"
+310-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:286:19-97
+311            android:excludeFromRecents="true"
+311-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:287:19-52
+312            android:immersive="true"
+312-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:288:19-43
+313            android:label="@@string/activity_label_empty"
+313-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:289:19-64
+314            android:theme="@style/NoDisplay" >
+314-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:290:19-51
+315            <intent-filter>
+315-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:291:13-294:29
+316                <action android:name="org.lineageos.setupwizard.EXIT" />
+316-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:292:17-72
+316-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:292:25-70
+317
+318                <category android:name="android.intent.category.DEFAULT" />
+318-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:17-76
+318-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:27-73
+319            </intent-filter>
+320        </activity>
+321        <activity
+321-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:297:9-303:53
+322            android:name="org.lineageos.setupwizard.SetupWizardTestActivity"
+322-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:297:19-58
+323            android:configChanges="keyboard|keyboardHidden|mcc|mnc|orientation|screenSize"
+323-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:298:19-97
+324            android:exported="false"
+324-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:299:19-43
+325            android:immersive="true"
+325-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:300:19-43
+326            android:label="@string/activity_label_empty"
+326-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:301:19-63
+327            android:launchMode="singleInstance"
+327-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:302:19-54
+328            android:theme="@style/NoDisplay" />
+328-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:303:19-51
+329
+330        <receiver android:name="org.lineageos.setupwizard.PartnerReceiver" >
+330-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:305:9-311:20
+330-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:305:19-50
+331            <intent-filter>
+331-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:306:13-310:29
+332                <action android:name="com.android.setupwizard.action.PARTNER_CUSTOMIZATION" />
+332-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:307:17-95
+332-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:307:25-92
+333                <action android:name="com.google.android.tvsetup.action.PARTNER_CUSTOMIZATION" />
+333-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:308:17-98
+333-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:308:25-95
+334
+335                <category android:name="android.intent.category.DEFAULT" />
+335-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:17-76
+335-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:74:27-73
+336            </intent-filter>
+337        </receiver>
+338
+339        <service
+339-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:313:9-314:44
+340            android:name="org.lineageos.setupwizard.SetupWizardExitService"
+340-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:313:18-56
+341            android:exported="false" />
+341-->/Users/gWOLF3/Code/openInternet/aosp/android_packages_apps_SetupWizard/AndroidManifest.xml:314:18-42
+342    </application>
+343
+344</manifest>

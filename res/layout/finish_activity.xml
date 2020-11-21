@@ -36,17 +36,13 @@
             android:layout_width="match_parent"
             android:layout_height="0px"
             android:layout_weight="1"
-            android:src="@drawable/logo"
+            android:src="@mipmap/openinternet_logo"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
             android:gravity="center"
-            android:padding="@dimen/content_margin_left"/>
+            android:padding="@dimen/content_margin_left"
+            android:contentDescription="TODO" />
 
-        <com.google.android.setupdesign.view.NavigationBar
-            android:id="@+id/navigation_bar"
-            style="@style/SudNavBarTheme"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/sud_navbar_height" />
 
     </LinearLayout>
 
