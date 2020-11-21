@@ -29,14 +29,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@color/primary">
+        android:background="@color/darkgrey">
 
         <ImageView
             android:id="@+id/brand_logo"
             android:layout_width="match_parent"
             android:layout_height="0px"
             android:layout_weight="1"
-            android:src="@drawable/logo"
+            android:src="@mipmap/openinternet_logo_foreground"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
             android:gravity="center"

@@ -17,6 +17,7 @@
 -->
 <resources>
     <color name="black">#21272b</color>
+    <color name="darkgrey">#393939</color>
     <color name="white">#ffffff</color>
     <color name="page_background">#e4e7e9</color>
 
@@ -25,7 +26,7 @@
     <color name="accent">#167C80</color>
     <color name="primary_text">#8a000000</color>
     <color name="secondary_text">#42000000</color>
-    <color name="button_bar_text_enabled">#ff1e1e1e</color>
+    <color name="button_bar_text_enabled">#ffffff</color>
     <color name="button_bar_text_disabled">#321e1e1e</color>
     <color name="divider">#40000000</color>
     <color name="header_bg">@color/primary</color>
