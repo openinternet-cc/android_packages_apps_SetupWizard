@@ -33,7 +33,7 @@
         android:adjustViewBounds="false"
         android:gravity="center"
         android:padding="0in"
-        android:scaleType="fit"
+        android:scaleType="fitCenter"
         android:src="@mipmap/dat_about_foreground" />
 
     <com.google.android.setupdesign.view.NavigationBar
