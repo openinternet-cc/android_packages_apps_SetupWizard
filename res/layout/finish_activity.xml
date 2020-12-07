@@ -40,7 +40,7 @@
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
             android:gravity="center"
-            android:padding="10dp"/>
+            android:padding="26dp"/>
 
         <com.google.android.setupdesign.view.NavigationBar
             android:id="@+id/navigation_bar"

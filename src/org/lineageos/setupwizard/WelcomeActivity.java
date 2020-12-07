@@ -35,7 +35,7 @@ public class WelcomeActivity extends BaseSetupWizardActivity {
         super.onCreate(savedInstanceState);
         mRootView = findViewById(R.id.root);
         setNextText(R.string.next);
-        setBackText(R.string.emergency_call);
+        setBackText(R.string.dat_wizard);
         setBackDrawable(null);
         mEnableAccessibilityController =
                 EnableAccessibilityController.getInstance(getApplicationContext());
@@ -48,9 +48,7 @@ public class WelcomeActivity extends BaseSetupWizardActivity {
     public void onBackPressed() {}
 
     @Override
-    public void onNavigateBack() {
-        startEmergencyDialer();
-    }
+    public void onNavigateBack() {}
 
     @Override
     protected int getTransition() {
