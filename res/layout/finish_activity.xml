@@ -36,7 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="0px"
             android:layout_weight="1"
-            android:src="@mipmap/datos_logo_foreground"
+            android:src="@mipmap/logonew.png"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
             android:gravity="center"
